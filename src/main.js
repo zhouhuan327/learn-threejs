@@ -2,4 +2,5 @@
 // import './6-animation.js'
 // import './7-camera.js'
 // import './8-fullscreen'
-import './9-geometries'
+// import './9-geometries'
+import './10-debugger'
