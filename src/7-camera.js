@@ -69,7 +69,7 @@ window.addEventListener("mousemove", (e) => {
 const controls = new OrbitControls(camera, renderer.domElement);
 // 增加 阻尼惯性
 controls.enableDamping = true
-
+controls.autoRotate = true
 const tick = () => {
   //   手动更新相机
   //   camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 3;
