@@ -3,4 +3,5 @@
 // import './7-camera.js'
 // import './8-fullscreen'
 // import './9-geometries'
-import './10-debugger'
+// import './10-debugger'
+import  './11-texture.js'
