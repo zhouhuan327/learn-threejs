@@ -1,12 +1,17 @@
 import * as Three from "three";
-import type { Camera, Scene, Renderer, AxesHelper } from "three";
+import type {
+  PerspectiveCamera,
+  Scene,
+  WebGLRenderer,
+  AxesHelper,
+} from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
 class ThreeBase {
   container: HTMLElement = null;
   scene: Scene = null;
-  renderer: Renderer = null;
-  camera: Camera = null;
+  renderer: WebGLRenderer = null;
+  camera: PerspectiveCamera = null;
   axesHelper: AxesHelper = null;
   controls = null;
   gui = null;
