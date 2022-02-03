@@ -8,13 +8,13 @@ import type {
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
 class ThreeBase {
-  container: HTMLElement = null;
-  scene: Scene = null;
-  renderer: WebGLRenderer = null;
-  camera: PerspectiveCamera = null;
-  axesHelper: AxesHelper = null;
-  controls = null;
-  gui = null;
+  container: HTMLElement;
+  scene: Scene;
+  renderer: WebGLRenderer;
+  camera: PerspectiveCamera;
+  axesHelper: AxesHelper;
+  controls;
+  gui;
   sizes = {
     width: window.innerWidth,
     height: window.innerHeight,
@@ -33,7 +33,7 @@ class ThreeBase {
     // 渲染器
     this.setRenderer();
     // 动画相关
-    this.setAnimate();
+    // this.setAnimate();
     // 响应式
     this.setResponsive();
     // 辅助工具
@@ -46,9 +46,9 @@ class ThreeBase {
       0.1,
       100
     );
-    this.camera.position.x = 1;
-    this.camera.position.y = 1;
-    this.camera.position.z = 1;
+    this.camera.position.x = 3;
+    this.camera.position.y = 3;
+    this.camera.position.z = 3;
     this.scene.add(this.camera);
   }
   setControls() {
@@ -76,7 +76,6 @@ class ThreeBase {
       // Call tick again on the next frame
       window.requestAnimationFrame(tick);
     };
-
     tick();
   }
   setResponsive() {

@@ -14,9 +14,9 @@ class Galaxy extends ThreeBase {
     insideColor: "#ff6030",
     outsideColor: "#1b3984",
   };
-  geometry: BufferGeometry = null;
-  material: PointsMaterial = null;
-  points: Points = null;
+  geometry: BufferGeometry;
+  material: PointsMaterial;
+  points: Points;
   constructor() {
     super();
 
