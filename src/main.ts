@@ -12,4 +12,4 @@
 // import './16-haunted-house.js'
 // import "./17-particles.js";
 // import "./18-galaxy.js";
-import "./ts-class-test.ts";
+import "./18-galaxy.ts";
