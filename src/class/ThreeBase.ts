@@ -33,7 +33,7 @@ class ThreeBase {
     // 渲染器
     this.setRenderer();
     // 动画相关
-    // this.setAnimate();
+    this.setAnimate();
     // 响应式
     this.setResponsive();
     // 辅助工具
@@ -72,7 +72,6 @@ class ThreeBase {
 
       // Render
       this.renderer.render(this.scene, this.camera);
-
       // Call tick again on the next frame
       window.requestAnimationFrame(tick);
     };
